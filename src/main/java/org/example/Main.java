@@ -9,8 +9,8 @@ import org.example.service.ShoppingCart;
 public class Main {
     public static void main(String[] args) {
         Meat meat = new Meat(5, 100);
-        Apple redApple = new Apple(10, 50, Colour.red);
-        Apple greenApple = new Apple(8, 60, Colour.green);
+        Apple redApple = new Apple(10, 50, Colour.RED);
+        Apple greenApple = new Apple(8, 60, Colour.GREEN);
 
         Food[] foods = {meat, redApple, greenApple};
         ShoppingCart shoppingCart = new ShoppingCart(foods);

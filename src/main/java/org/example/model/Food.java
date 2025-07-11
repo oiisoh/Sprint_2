@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.model.constants.Discount;
+
 public abstract class Food implements Discountable{
     protected int amount;
     protected double price;
@@ -7,7 +9,7 @@ public abstract class Food implements Discountable{
 
     @Override
     public double getDiscount() {
-        return 0;
+        return Discount.ZERO;
     }
     public int getAmount(){
         return amount;

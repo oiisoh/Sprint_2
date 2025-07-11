@@ -1,5 +1,8 @@
 package org.example.model;
 
+import org.example.model.constants.Colour;
+import org.example.model.constants.Discount;
+
 public class Apple extends Food{
     String colour;
     public Apple(int amount, double price, String colour) {
@@ -11,8 +14,8 @@ public class Apple extends Food{
 
     @Override
     public double getDiscount() {
-        if (colour.equals("red")) {
-            return 60;
+        if (colour.equals(Colour.RED)) {
+            return Discount.SIXTY;
         } else {
             return super.getDiscount();
         }
